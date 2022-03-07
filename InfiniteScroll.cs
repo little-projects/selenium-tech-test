@@ -44,6 +44,8 @@ namespace SeleniumTechTest
 
             string heading = page.FindElement(By.XPath("//h3")).Text;
             Assert.AreEqual(heading, "Infinite Scroll");
+
+            page.Close();
         }
     }
 }
